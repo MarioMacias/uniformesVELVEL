@@ -1,0 +1,92 @@
+/*Página para los colores: http://colorhunt.co/
+Página de flex: http://the-echoplex.net/flexyboxes/*/
+*{
+    margin: 5px;
+    padding: 5px; 
+     box-sizing: border-box;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.heder{
+    display: flex;
+    flex-flow: column wrap;
+}
+    .menu{
+        background: #00909e;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        align-items: center;
+    }
+
+        .sucursal, .buscador, .iconos{
+            background: #27496d;
+            flex: 1 1 auto;
+            height: 50px;
+        }
+
+         .logo{
+            background: #27496d;
+            flex: 20 1 auto;
+            height: 50px;
+        }
+
+ .categorias{
+    background: #27496d;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+    .menu-categorias{
+         display: flex;
+        flex-flow: row nowrap;
+        height: 20px;
+        align-items: center;
+    }
+
+    .menucat-text{
+        flex: 1 1 100%;
+        height: 50px;
+        text-align: center;
+    }
+
+    .text-blanco{
+        text-decoration: none;
+         color: aliceblue;
+    }
+    
+.section{
+    background: black;
+    display: flex;
+    flex-flow: column wrap;
+}
+    .imagen-section{
+        background: #27496d;
+        height: 400px;
+        
+    }
+
+    .articulos{
+        background: #000000;
+        display: flex;
+    }
+
+        .article{
+            background: aqua;
+            flex: 1 1 auto;
+            height: 200px;
+        }
+
+.footer{
+    background: #dae1e7;
+} 
+
+@media all and (max-width: 800px){
+    .articulos{
+        flex-direction: column;
+    }
+}
